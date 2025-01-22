@@ -9,40 +9,9 @@ This project consists of a backend API and a frontend application for managing a
 
 The project is divided into two main directories:
 
-- `docusign-hack-project-back`: Contains the backend API built with Node.js and MongoDB.
-- `docusign-hack-project-front`: Contains the frontend application built with React.
+- `backend`: Contains the backend API built with Node.js and MongoDB.
+- `frontend`: Contains the frontend application built with React.
 
-### Backend Directory Structure
-
-```
-docusign-hack-project-back/
-├── src/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── app.js
-│   └── config.js
-├── .env
-├── package.json
-└── README.md
-```
-
-### Frontend Directory Structure
-
-```
-docusign-hack-project-front/
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── App.js
-│   ├── index.js
-│   └── setupProxy.js
-├── .env
-├── package.json
-└── README.md
-```
-```
 ## Prerequisites
 
 - Node.js (v22 or higher)
@@ -55,7 +24,7 @@ docusign-hack-project-front/
 1. Navigate to the backend directory:
 
     ```sh
-    cd docusign-hack-project/docusign-hack-project-back
+    cd docusign-hack-project/backend
     ```
 
 2. Install dependencies:
@@ -94,7 +63,7 @@ docusign-hack-project-front/
 1. Navigate to the frontend directory:
 
     ```sh
-    cd docusign-hack-project/docusign-hack-project-front
+    cd docusign-hack-project/frontend
     ```
 
 2. Install dependencies:

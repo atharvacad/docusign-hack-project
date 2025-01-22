@@ -1,16 +1,13 @@
-# Docusign Hack Project
+# DocuSign Hack Project
 
-This project consists of a backend API and a frontend application for managing agreements. The backend is built with Node.js and MongoDB, while the frontend is built with React.
+This project consists of a backend API and a frontend application for managing agreements. The backend is built with **Node.js** and **MongoDB**, while the frontend is built with **React**.
 
-## Project Structure
-
-```markdown
 ## Project Structure
 
 The project is divided into two main directories:
 
-- `backend`: Contains the backend API built with Node.js and MongoDB.
-- `frontend`: Contains the frontend application built with React.
+- **`backend`**: Contains the backend API built with Node.js and MongoDB.
+- **`frontend`**: Contains the frontend application built with React.
 
 ## Prerequisites
 
@@ -48,7 +45,7 @@ The project is divided into two main directories:
 
 4. Start MongoDB:
 
-    Ensure that MongoDB is running on your local machine or in a Docker container, or ensure that your MongoDB cloud instance is accessible.
+    Ensure that MongoDB is running on your local machine or in a Docker container, or that your MongoDB cloud instance is accessible.
 
 5. Run the backend application:
 
@@ -56,7 +53,7 @@ The project is divided into two main directories:
     node src/app.js
     ```
 
-    The server will start on the port specified in the `.env` file (default is 3000).
+    The server will start on the port specified in the `.env` file (default is `3000`).
 
 ### Frontend
 
@@ -92,4 +89,4 @@ The project is divided into two main directories:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

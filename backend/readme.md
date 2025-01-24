@@ -1,62 +1,73 @@
-# Project Name
+# Docusign Hack Project Backend
 
-## Description
+This is the backend API for the Docusign Hack Project. It allows you to create agreements by uploading PDF files and retrieve all agreements stored in the MongoDB database.
 
-A brief description of your project.
+## Prerequisites
+
+- Node.js (v14 or higher)
+- MongoDB (local or cloud instance)
 
 ## Installation
 
-### Prerequisites
-
-- Docker
-- Node.js
-- npm
-
-### Steps
-
-1. Clone the repository:
+1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/your-repo.git
-    cd your-repo
+    git clone https://github.com/your-username/docusign-hack-project-back.git
+    cd docusign-hack-project-back
     ```
 
-2. Create a `.env` file in the root directory with the following content:
+2. **Install dependencies:**
 
-    ```env
+    ```sh
+    npm install
+    ```
+
+3. **Create a `.env` file:**
+
+    Create a `.env` file in the root directory of the backend project with the following content:
+
+    ```properties
     MONGODB_URL=mongodb+srv://<username>:<password>@<cluster-url>
     DATABASE_NAME=docusign-hack-project
     COLLECTION_NAME=agreements
     PORT=3000
     OPENAI_API_KEY=your_openai_api_key
+    ACCESS_TOKEN=your_docusign_access_token
+    ACCOUNT_ID=your_docusign_account_id
     ```
 
-3. Build the Docker image:
+    Replace `<username>`, `<password>`, and `<cluster-url>` with your MongoDB credentials and  URLcluster. Replace `your_openai_api_key` with your actual OpenAI API key.
+
+4. **Start MongoDB:**
+
+    Ensure that MongoDB is running on your local machine or in a Docker container, or ensure that your MongoDB cloud instance is accessible.
+
+5. **Run the backend application:**
 
     ```sh
-    docker build -t docusign-hack-project-back .
+    node src/app.js
     ```
 
-4. Run the Docker container:
+    The server will start on the port specified in the `.env` file (default is 3000).
 
-    ```sh
-    docker run -p 3000:3000 --env-file .env docusign-hack-project-back
-    ```
+## Libraries and APIs Used
 
-5. Access the API:
+### Backend Libraries
 
-    ```markdown
-    http://localhost:3000/api/all-agreements
-    ```
+- **Express**: A minimal and flexible Node.js web application framework.
+- **Mongoose**: An ODM (Object Data Modeling) library for MongoDB and Node.js.
+- **Multer**: A middleware for handling `multipart/form-data`, which is primarily used for uploading files.
+- **Axios**: A promise-based HTTP client for the browser and Node.js.
+- **dotenv**: A module that loads environment variables from a `.env` file into `process.env`.
+- **crypto**: A module that provides cryptographic functionality.
+- **jsonwebtoken**: A library to work with JSON Web Tokens (JWT).
+- **bcrypt**: A library to help hash passwords.
+- **pg**: PostgreSQL client for Node.js.
 
-## Usage
+### APIs
 
-Provide examples of how to use your project.
-
-## Contributing
-
-Provide guidelines for contributing to your project.
+- **OpenAI API**: Used for interacting with the GPT-3.5-turbo model to generate AI insights and responses.
 
 ## License
 
-Include the license information for your project.
+This project is licensed under the MIT License.

@@ -1,6 +1,45 @@
-# Getting Started with Create React App
+# Docusign Hack Project Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the Docusign Hack Project. It allows users to interact with the backend API to manage agreements.
+
+## Prerequisites
+
+- Node.js (v14 or higher)
+
+## Installation
+
+1. **Clone the repository:**
+
+    ```sh
+    git clone https://github.com/your-username/docusign-hack-project-front.git
+    cd docusign-hack-project-front
+    ```
+
+2. **Install dependencies:**
+
+    ```sh
+    npm install
+    ```
+
+3. **Create a `.env` file:**
+
+    Create a `.env` file in the root directory of the frontend project with the following content:
+
+    ```properties
+    REACT_APP_BACKEND_URL=http://localhost:3000
+    ```
+
+    Replace `http://localhost:3000` with the URL of your backend server if it's different.
+
+## Running the Application
+
+1. **Start the frontend application:**
+
+    ```sh
+    npm start
+    ```
+
+    The application will start on `http://localhost:3000`.
 
 ## Available Scripts
 
@@ -31,40 +70,30 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However, we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Libraries and APIs Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend Libraries
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React**: A JavaScript library for building user interfaces.
+- **React Router DOM**: A collection of navigational components that compose declaratively with your application.
+- **Axios**: A promise-based HTTP client for the browser and Node.js.
+- **@react-pdf-viewer**: A set of React components to view PDF documents.
+- **@testing-library/react**: Simple and complete React DOM testing utilities that encourage good testing practices.
+- **@testing-library/jest-dom**: Custom jest matchers to test the state of the DOM.
+- **@testing-library/user-event**: Simulates user interactions with the DOM.
 
-### Code Splitting
+### APIs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **OpenAI API**: Used for interacting with the GPT-3.5-turbo model to generate AI insights and responses.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
